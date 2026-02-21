@@ -18,7 +18,7 @@ import com.example.meap.UiUtils;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.appbar.MaterialToolbar;
+<
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -29,7 +29,7 @@ public class ChatFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
-        MaterialToolbar chatToolbar = view.findViewById(R.id.chatToolbar);
+
         TextInputEditText person = view.findViewById(R.id.inputPersonName);
         TextInputEditText message = view.findViewById(R.id.inputChatMessage);
         TextInputEditText whatsappDelegate = view.findViewById(R.id.inputWhatsappDelegate);
@@ -39,16 +39,6 @@ public class ChatFragment extends Fragment {
         MaterialButton video = view.findViewById(R.id.btnPersonVideoCall);
         FloatingActionButton mic = view.findViewById(R.id.btnMicInput);
 
-        chatToolbar.setOnMenuItemClickListener(item -> {
-            if (item.getItemId() == R.id.action_chat_call) {
-                UiUtils.toast(requireContext(), "Calling " + person.getText());
-                return true;
-            } else if (item.getItemId() == R.id.action_chat_video) {
-                UiUtils.toast(requireContext(), "Video calling " + person.getText());
-                return true;
-            }
-            return false;
-        });
 
         ActivityResultLauncher<Intent> speechLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(), result -> {
