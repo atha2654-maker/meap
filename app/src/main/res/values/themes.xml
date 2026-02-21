@@ -1,8 +1,0 @@
-<resources>
-    <style name="Theme.MEAP" parent="Theme.Material3.Light.NoActionBar">
-        <item name="android:statusBarColor">@color/purple_500</item>
-        <item name="android:windowBackground">@color/bg_soft</item>
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorSecondary">@color/teal_700</item>
-    </style>
-</resources>
