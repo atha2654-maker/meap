@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latest MUN Events"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Global Youth Summit 2026" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location: Delhi | Fee: ₹1,499" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enrollment link: https://example.com/enroll" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEnrollLatestEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enroll Now" />
+
+    </LinearLayout>
+</ScrollView>
