@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_voice_call"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="Voice Call"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/action_video_call"
+        android:icon="@android:drawable/presence_video_online"
+        android:title="Video Call"
+        android:showAsAction="always" />
+</menu>
