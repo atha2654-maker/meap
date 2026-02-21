@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Public chat and conference"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnJoinPublicChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Public Chat" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartPublicConference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Public Conference" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShareScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Screen" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOpenWhiteboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Whiteboard" />
+
+</LinearLayout>
