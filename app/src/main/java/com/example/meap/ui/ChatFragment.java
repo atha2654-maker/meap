@@ -18,6 +18,7 @@ import com.example.meap.UiUtils;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
+<
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -28,6 +29,7 @@ public class ChatFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
+
         TextInputEditText person = view.findViewById(R.id.inputPersonName);
         TextInputEditText message = view.findViewById(R.id.inputChatMessage);
         TextInputEditText whatsappDelegate = view.findViewById(R.id.inputWhatsappDelegate);
@@ -36,6 +38,7 @@ public class ChatFragment extends Fragment {
         MaterialButton call = view.findViewById(R.id.btnPersonVoiceCall);
         MaterialButton video = view.findViewById(R.id.btnPersonVideoCall);
         FloatingActionButton mic = view.findViewById(R.id.btnMicInput);
+
 
         ActivityResultLauncher<Intent> speechLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(), result -> {
